@@ -4,7 +4,7 @@ export const Nav = styled.nav`
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 80px;
+  height: 8vh;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -17,7 +17,7 @@ export const Nav = styled.nav`
   transition: all 0.3s ease-out;
 
   @media screen and (max-width: 768px) {
-    padding: 0 1rem;
+    padding: 0 1em;
   }
 `;
 
@@ -37,7 +37,7 @@ export const Menu = styled.div`
 `;
 
 export const MenuLink = styled.a`
-  margin: 0.5rem 1rem;
+  margin: 0.5em 1em;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -61,4 +61,44 @@ export const Burger = styled.div`
 export const Logo = styled.div`
   color: #fff;
   text-decoration: none;
+`;
+
+export const SearchBar = styled.div`
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 10px;
+`;
+
+export const Input = styled.input`
+  flex: 1 0;
+  min-width: 200px;
+  min-height: 25px;
+  background-color: inherit;
+  padding-left: 1em;
+  border: 0;
+
+  &:focus {
+    outline: none;
+  }
+`;
+
+export const Icon = styled.button`
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  min-height: 32px;
+  min-width: 32px;
+
+  svg {
+    fill: #366d6f;
+  }
+
+  &:hover {
+    background-color: rgba(54, 109, 111, 0.1);
+  }
 `;
