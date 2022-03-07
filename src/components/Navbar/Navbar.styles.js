@@ -10,7 +10,8 @@ export const Appbar = styled.nav`
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  background-color: #275553;
+  background-color: #fff;
+  grid-area: nav;
   /* box-shadow: ${({ isTop }) =>
     isTop ? '0' : '0 4px 16px rgba(0, 0, 0, 0.07)'};
   z-index: 1;
@@ -23,7 +24,7 @@ export const Appbar = styled.nav`
 `;
 
 export const Title = styled.h3`
-  color: #fff;
+  color: #275553;
 `;
 
 export const SearchBar = styled.div`
